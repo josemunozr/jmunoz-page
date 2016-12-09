@@ -1,7 +1,38 @@
 @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin');
+@import "common";
 
 body,html {
   height: 100%;
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
+
+.container {
+  @extend .full-height;
+  position: relative;
+  color: #cfcfcf;
+}
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  video {
+    // cubre toda la pantalla
+    min-width: 100%;
+    min-height: 100%;
+
+    // para que navegador no altere
+    width: auto;
+    height: auto;
+
+    // Centrarlo
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+} 

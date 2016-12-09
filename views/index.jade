@@ -1,5 +1,12 @@
 include layout.jade
 
-.row
-  .col-xs-12
-    h1 Home
+.video-container
+  video(autoplay='', loop='', poster='./videos/poster/Aloha-Mundo.jpg')
+    source(src='./videos/mp4/Aloha-Mundo.mp4', typ='video/mp4')
+    source(src='./videos/webm/Aloha-Mundo.webm', typ='video/webm')
+
+.container
+  .row.full-height.full-width.center-xs.middle-xs
+    .col-xs-12
+      .box
+        h1 José Muñoz

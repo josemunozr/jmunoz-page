@@ -354,6 +354,33 @@ td,
 th {
   padding: 0; }
 
+.full-height, .container {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+
 body, html {
   height: 100%;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  position: relative; }
+
+.container {
+  position: relative;
+  color: #cfcfcf; }
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute; }
+  .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
