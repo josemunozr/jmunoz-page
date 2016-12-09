@@ -55,13 +55,21 @@ body,html {
     margin-top: 1em;
     cursor: pointer;
     a{color: #cfcfcf; text-decoration: none;}
-    &:hover{
-      border: 0;
+    &:hover.twitter { 
+      background-color: #1da1f2;
+      border-color: #1da1f2;
       color: #fff;
     }
-    &.twitter:hover {background-color: #1da1f2; }
-    &.facebook:hover {background-color: #3b5998; }
-    &.git:hover {background-color: #333333; }
+    &:hover.facebook { 
+      background-color: #3b5998;
+      border-color: #3b5998;
+      color: #fff;
+    }
+    &:hover.git { 
+      background-color: #333333;
+      border-color: #333333;
+      color: #fff;
+    }
   }
 }
 

@@ -406,15 +406,18 @@ body, html {
     .social .share-button a {
       color: #cfcfcf;
       text-decoration: none; }
-    .social .share-button:hover {
-      border: 0;
+    .social .share-button:hover.twitter {
+      background-color: #1da1f2;
+      border-color: #1da1f2;
       color: #fff; }
-    .social .share-button.twitter:hover {
-      background-color: #1da1f2; }
-    .social .share-button.facebook:hover {
-      background-color: #3b5998; }
-    .social .share-button.git:hover {
-      background-color: #333333; }
+    .social .share-button:hover.facebook {
+      background-color: #3b5998;
+      border-color: #3b5998;
+      color: #fff; }
+    .social .share-button:hover.git {
+      background-color: #333333;
+      border-color: #333333;
+      color: #fff; }
 
 .nav {
   padding: 2em;
