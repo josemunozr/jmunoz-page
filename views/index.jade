@@ -1,18 +1,18 @@
 include layout.jade
-
+#home
 .video-container
   video(autoplay='', loop='', poster='./videos/poster/Aloha-Mundo.jpg')
     source(src='./videos/mp4/Aloha-Mundo.mp4', typ='video/mp4')
     source(src='./videos/webm/Aloha-Mundo.webm', typ='video/webm')
 
 nav.nav
-  .container#home
+  .container
     a(href="#home") José Muñoz Ruiz
     ul
       li
         a(href="#home") Home
       li
-        a(href="") Sobre mi
+        a(href="#about-me") Sobre mi
       li
         a(href="") Portafolio
       li
@@ -23,6 +23,28 @@ nav.nav
       .box
         .img-container
           img(src="./imgs/avatar-1.jpg" width="250" height="250")
+aside.social
+  .row.full-height.full-width.end-xs.middle-xs
+    .col-xs-12
+      .box
+        .share-button.twitter
+          a(href="https://twitter.com/JoseMunozR_" target="_blank")
+            span
+               .fa.fa-twitter
+        .share-button.facebook
+          a(href="https://www.facebook.com/joozepp" target="_blank")
+            span
+               .fa.fa-facebook
+        .share-button.git
+          a(href="https://github.com/josemunozr" target="_blank")
+            span
+               .fa.fa-git
+
 .icon
   span
     .fa.fa-chevron-down
+.row
+  .col-xs-12
+    .box
+      #about-me.about
+

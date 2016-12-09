@@ -9,6 +9,10 @@ body,html {
   font-size: 16px;
 }
 
+.about{
+  height: 500px;
+}
+
 .container {
   @extend .full-height;
   position: relative;
@@ -29,6 +33,32 @@ body,html {
   img {
     border-radius: 50%;
     border: 0.2em solid;
+  }
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-right: 0.5em;
+  .share-button {
+    border-radius:50%;
+    border: 1px solid #cfcfcf;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 1em;
+    cursor: pointer;
+    a{color: #cfcfcf; }
+    &:hover{
+      border: 0;
+      color: #fff;
+    }
+    &.twitter:hover {background-color: #1da1f2; }
+    &.facebook:hover {background-color: #3b5998; }
+    &.git:hover {background-color: #333333; }
   }
 }
 
