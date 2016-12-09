@@ -369,6 +369,31 @@ body, html {
 .about {
   height: 500px; }
 
+.actions-button {
+  margin-top: 2em; }
+  .actions-button .contact, .actions-button .portafolio {
+    background-color: #2f937b;
+    line-height: 20px;
+    max-width: 100px;
+    text-decoration: none;
+    color: #cfcfcf;
+    padding: 10px 30px;
+    webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+  .actions-button .contact {
+    border: 2px solid #2f937b; }
+    .actions-button .contact:hover {
+      background-color: #fff;
+      border-color: #fff;
+      color: #2f937b; }
+  .actions-button .portafolio {
+    border: 2px solid;
+    background-color: transparent; }
+    .actions-button .portafolio:hover {
+      background-color: #2f937b;
+      border-color: #2f937b;
+      color: #fff; }
+
 .container {
   position: relative;
   color: #cfcfcf; }
