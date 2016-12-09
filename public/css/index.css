@@ -360,14 +360,17 @@ th {
 .full-width {
   width: 100%; }
 
+.no-margin {
+  margin: 0px; }
+
+.no-padding {
+  padding: 0px; }
+
 body, html {
   height: 100%;
   font-family: 'Lato', sans-serif;
   position: relative;
   font-size: 16px; }
-
-.about {
-  height: 500px; }
 
 .actions-button {
   margin-top: 2em; }
@@ -413,6 +416,9 @@ body, html {
   border-radius: 50%;
   border: 0.2em solid; }
 
+.portafolio {
+  height: 500px; }
+
 .social {
   position: absolute;
   right: 0;
@@ -445,12 +451,14 @@ body, html {
       color: #fff; }
 
 .nav {
-  padding: 2em;
+  padding: 3em 0;
+  background: transparent;
   font-size: 1.1em;
   overflow: auto;
   position: fixed;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  transition: all 0.5s; }
   .nav a {
     color: #cfcfcf;
     text-decoration: none; }
@@ -465,6 +473,9 @@ body, html {
         padding: 1.5em;
         color: #cfcfcf;
         text-decoration: none; }
+  .nav.stick {
+    background-color: #222;
+    padding: 2em 0; }
 
 .video-container {
   height: 100%;

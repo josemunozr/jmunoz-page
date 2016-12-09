@@ -9,10 +9,6 @@ body,html {
   font-size: 16px;
 }
 
-.about{
-  height: 500px;
-}
-
 .actions-button {
   margin-top: 2em;
   .contact, .portafolio {
@@ -70,6 +66,10 @@ body,html {
   }
 }
 
+.portafolio{
+  height: 500px;
+}
+
 .social {
   position: absolute;
   right: 0;
@@ -105,12 +105,14 @@ body,html {
 }
 
 .nav {
-  padding: 2em;
+  padding: 3em 0;
+  background: transparent;
   font-size: 1.1em;
   overflow: auto;
   position: fixed;
   width: 100%;
   z-index: 2;
+  transition: all 0.5s;
   a {
     color: #cfcfcf;
     text-decoration: none;
@@ -129,6 +131,10 @@ body,html {
 
       }
     }
+  }
+  &.stick{
+    background-color: #222;
+    padding: 2em 0;
   }
 }
 
