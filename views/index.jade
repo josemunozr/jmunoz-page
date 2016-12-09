@@ -5,8 +5,24 @@ include layout.jade
     source(src='./videos/mp4/Aloha-Mundo.mp4', typ='video/mp4')
     source(src='./videos/webm/Aloha-Mundo.webm', typ='video/webm')
 
+nav.nav
+  .container#home
+    a(href="#home") José Muñoz Ruiz
+    ul
+      li
+        a(href="#home") Home
+      li
+        a(href="") Sobre mi
+      li
+        a(href="") Portafolio
+      li
+        a(href="") Contactame
 .container
   .row.full-height.full-width.center-xs.middle-xs
     .col-xs-12
       .box
-        h1 José Muñoz
+        .img-container
+          img(src="./imgs/avatar-1.jpg" width="250" height="250")
+.icon
+  span
+    .fa.fa-chevron-down
