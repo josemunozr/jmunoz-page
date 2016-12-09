@@ -1,0 +1,28 @@
+{
+  "name": "jmunoz-page",
+  "version": "1.0.0",
+  "description": "web personal, portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemunozr/jmunoz-page.git"
+  },
+  "keywords": [
+    "portafolio",
+    "web",
+    "personal"
+  ],
+  "author": "José Muñoz Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josemunozr/jmunoz-page/issues"
+  },
+  "homepage": "https://github.com/josemunozr/jmunoz-page#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  }
+}
