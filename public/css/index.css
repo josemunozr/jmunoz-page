@@ -426,7 +426,7 @@ body, html {
   border: 0.2em solid; }
 
 .portafolio {
-  padding: 2em 0;
+  padding: 100px 0;
   background-color: #f1f1f1; }
   .portafolio .title {
     color: #333; }
@@ -496,10 +496,12 @@ body, html {
     list-style: none;
     margin: 0;
     float: right; }
-    .nav ul li {
+    .nav ul .nav-item {
       display: inline-block;
       cursor: pointer; }
-      .nav ul li a {
+      .nav ul .nav-item.active a {
+        color: #2f937b; }
+      .nav ul .nav-item a {
         padding: 1.5em;
         color: #cfcfcf;
         text-decoration: none; }
