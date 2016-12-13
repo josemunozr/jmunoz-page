@@ -360,17 +360,26 @@ th {
 .full-width {
   width: 100%; }
 
-.no-margin {
+.hr-custom {
+  width: 70px;
+  background: #2f937b;
+  height: 1px; }
+
+.no-margin, .portafolio .title {
   margin: 0px; }
 
 .no-padding {
   padding: 0px; }
 
+.text-center, .portafolio .title {
+  text-align: center; }
+
 body, html {
   height: 100%;
   font-family: 'Lato', sans-serif;
   position: relative;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #cfcfcf; }
 
 .actions-button {
   margin-top: 2em; }
@@ -417,7 +426,28 @@ body, html {
   border: 0.2em solid; }
 
 .portafolio {
-  height: 500px; }
+  padding: 2em 0;
+  background-color: #f1f1f1; }
+  .portafolio .title {
+    color: #333; }
+  .portafolio .card {
+    background-color: #fff;
+    color: #333;
+    height: 485px;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #2f937b; }
+    .portafolio .card .img {
+      height: 255px;
+      cursor: pointer; }
+      .portafolio .card .img:hover {
+        opacity: 0.8; }
+    .portafolio .card .caption {
+      color: #222;
+      padding: 0.5em; }
+      .portafolio .card .caption label {
+        display: block; }
+      .portafolio .card .caption a {
+        font-size: 0.8em; }
 
 .social {
   position: absolute;

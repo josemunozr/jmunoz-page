@@ -7,6 +7,7 @@ body,html {
   font-family: 'Lato', sans-serif;
   position: relative;
   font-size: 16px;
+  color: #cfcfcf;
 }
 
 .actions-button {
@@ -67,7 +68,33 @@ body,html {
 }
 
 .portafolio{
-  height: 500px;
+  padding: 2em 0;
+  background-color: #f1f1f1;
+  .title {
+    @extend .no-margin;
+    @extend .text-center;
+    color: #333;
+  }
+  .card {
+    background-color: #fff;
+    color: #333;
+    height: 485px;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #2f937b;
+    .img {
+      height: 255px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .caption {
+      color: #222;
+      padding: 0.5em;
+      label {display: block;}
+      a {font-size: 0.8em;}
+    }
+  }
 }
 
 .social {
