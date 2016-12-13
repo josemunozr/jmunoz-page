@@ -19,18 +19,17 @@
     /*var aboutme_top = $("#about-me").offset().top;
     var contact_top = $("#contact").offset().top;*/
 
-    if($(window).scrollTop() < portafolio_top){
+    if($(window).scrollTop() +70 < portafolio_top){
       $(".nav-item.home").addClass('active');
     }else {
       $(".nav-item.home").removeClass('active');
     }
 
-    if($(window).scrollTop() >= portafolio_top){
+    if($(window).scrollTop() +70 >= portafolio_top){
       $(".nav-item.pf").addClass('active');
     }else {
       $(".nav-item.pf").removeClass('active');
     }
-
   }
 
   $(window).scroll(function () {
@@ -40,5 +39,20 @@
 
   active_itemMenu();
   sticky_navigate();
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 70
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 
 }());
