@@ -9,6 +9,17 @@ body,html {
   font-size: 16px;
   color: #cfcfcf;
 }
+.about {
+  background-image: url(../imgs/fondo.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  color: #fff;
+  margin: 0px;
+  font-size: 2em;
+}
 
 .actions-button {
   margin-top: 2em;
@@ -39,6 +50,10 @@ body,html {
       color: #fff;
     }
   }
+}
+
+.contacto {
+  height: 80vh;
 }
 
 .container {
@@ -78,9 +93,7 @@ body,html {
   .card {
     background-color: #fff;
     color: #333;
-    height: 485px;
     margin-top: 1.5em;
-    border-bottom: 2px solid #2f937b;
     .img {
       height: 255px;
       cursor: pointer;
@@ -93,6 +106,13 @@ body,html {
       padding: 0.5em;
       label {display: block;}
       a {font-size: 0.8em;}
+    }
+  }
+  .more {
+    margin-top: 1.5em;
+    a {
+      color: #333;
+      text-decoration: none;
     }
   }
 }

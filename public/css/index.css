@@ -381,6 +381,17 @@ body, html {
   font-size: 16px;
   color: #cfcfcf; }
 
+.about {
+  background-image: url(../imgs/fondo.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  color: #fff;
+  margin: 0px;
+  font-size: 2em; }
+
 .actions-button {
   margin-top: 2em; }
   .actions-button .contact, .actions-button .portafolio {
@@ -405,6 +416,9 @@ body, html {
       background-color: #2f937b;
       border-color: #2f937b;
       color: #fff; }
+
+.contacto {
+  height: 80vh; }
 
 .container {
   position: relative;
@@ -433,9 +447,7 @@ body, html {
   .portafolio .card {
     background-color: #fff;
     color: #333;
-    height: 485px;
-    margin-top: 1.5em;
-    border-bottom: 2px solid #2f937b; }
+    margin-top: 1.5em; }
     .portafolio .card .img {
       height: 255px;
       cursor: pointer; }
@@ -448,6 +460,11 @@ body, html {
         display: block; }
       .portafolio .card .caption a {
         font-size: 0.8em; }
+  .portafolio .more {
+    margin-top: 1.5em; }
+    .portafolio .more a {
+      color: #333;
+      text-decoration: none; }
 
 .social {
   position: absolute;

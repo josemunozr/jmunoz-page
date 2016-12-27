@@ -16,8 +16,8 @@
   function active_itemMenu() {
     var home_top = $("#home").offset().top;
     var portafolio_top = $("#portafolio").offset().top;
-    /*var aboutme_top = $("#about-me").offset().top;
-    var contact_top = $("#contact").offset().top;*/
+    var aboutme_top = $("#about-me").offset().top;
+    var contact_top = $("#contact").offset().top;
 
     if($(window).scrollTop() +70 < portafolio_top){
       $(".nav-item.home").addClass('active');
@@ -29,6 +29,13 @@
       $(".nav-item.pf").addClass('active');
     }else {
       $(".nav-item.pf").removeClass('active');
+    }
+    
+    if($(window).scrollTop() +70 >= aboutme_top){
+      $(".nav-item.pf").removeClass('active');
+      $(".nav-item.aboutme").addClass('active');
+    }else {
+      $(".nav-item.aboutme").removeClass('active');
     }
   }
 
