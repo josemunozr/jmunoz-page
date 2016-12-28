@@ -91,11 +91,11 @@ body,html {
     color: #333;
   }
   .card {
-    background-color: #fff;
+    background-color: transparent;
     color: #333;
     margin-top: 1.5em;
     .img {
-      height: 255px;
+      /* height: 255px; */
       cursor: pointer;
       &:hover {
         opacity: 0.8;
@@ -168,6 +168,7 @@ body,html {
     list-style: none;
     margin:0;
     float: right;
+
     .nav-item {
       display: inline-block;
       cursor: pointer;
@@ -184,6 +185,44 @@ body,html {
   &.stick{
     background-color: #222;
     padding: 2em 0;
+  }
+
+  .responsive {
+    display: none;
+    background-color: #222;
+    &.active {
+      display: block;
+      ul {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        width: 100%;
+
+        text-align: center;
+        .nav-item {
+          display: block;
+          cursor: pointer;
+          padding: 1em 0;
+          &.active a{
+            color: #2f937b;
+          }
+          a {
+            color: #cfcfcf;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-opener {
+    display: none;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: -20px;
+    font-size: 2.5em;
+    right: 0.5em;
   }
 }
 
@@ -209,3 +248,22 @@ body,html {
             transform: translate(-50%,-50%);
   }
 } 
+
+
+@media only screen and (max-width: 960px) {
+  .nav {
+    .full {
+      display: none !important;;
+    }
+    .menu-opener {
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
+

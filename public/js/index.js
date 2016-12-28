@@ -10,6 +10,12 @@
       $(".nav").addClass('stick');
     }else {
       $(".nav").removeClass('stick');
+      $(".responsive").removeClass('active');
+
+      if(!$('.menu-opener').hasClass('fa-bars')){
+        $('.menu-opener').toggleClass('fa-bars');
+      }
+     
     }
   }
 
@@ -60,6 +66,13 @@
         }
       }
     });
+  });
+
+  $(".menu-opener").on('click', function () {
+    $(".responsive").toggleClass('active');
+    $(".nav").addClass('stick');
+    $('.menu-opener').toggleClass('fa-bars');
+   
   });
 
 }());

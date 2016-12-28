@@ -1,22 +1,38 @@
 include layout.jade
 #home
 .video-container
-  video(autoplay='', loop='', poster='./videos/poster/Aloha-Mundo.jpg')
+  video(autoplay='true', loop='', poster='./videos/poster/Aloha-Mundo.jpg')
     source(src='./videos/mp4/Aloha-Mundo.mp4', typ='video/mp4')
     source(src='./videos/webm/Aloha-Mundo.webm', typ='video/webm')
 
-nav.nav
-  .container
-    a(href="#home") José Muñoz Ruiz
-    ul
-      li.nav-item.home
-        a(href="#home") Home
-      li.nav-item.pf
-        a(href="#portafolio") Portafolio
-      li.nav-item.aboutme
-        a(href="#about-me") Sobre mi
-      li.nav-item.contact
-        a(href="#contact") Contactame
+.row.no-margin
+  .col-xs-12.no-padding
+    .box
+      nav.nav
+        .container
+          .full
+            a(href="#home") José Muñoz Ruiz
+            ul
+              li.nav-item.home
+                a(href="#home") Home
+              li.nav-item.pf
+                a(href="#portafolio") Portafolio
+              li.nav-item.aboutme
+                a(href="#about-me") Sobre mi
+              li.nav-item.contact
+                a(href="#contact") Contactame
+          .responsive
+            ul
+              li.nav-item.home
+                a(href="#home") Home
+              li.nav-item.pf
+                a(href="#portafolio") Portafolio
+              li.nav-item.aboutme
+                a(href="#about-me") Sobre mi
+              li.nav-item.contact
+                a(href="#contact") Contactame
+          <i class='fa fa-bars fa-close white-text menu-opener'></i>
+
 //- Home
 include home.jade
 //- Portafolio

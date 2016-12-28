@@ -360,6 +360,12 @@ th {
 .full-width {
   width: 100%; }
 
+.hidden {
+  display: none; }
+
+.visible {
+  display: block; }
+
 .hr-custom {
   width: 70px;
   background: #2f937b;
@@ -445,11 +451,11 @@ body, html {
   .portafolio .title {
     color: #333; }
   .portafolio .card {
-    background-color: #fff;
+    background-color: transparent;
     color: #333;
     margin-top: 1.5em; }
     .portafolio .card .img {
-      height: 255px;
+      /* height: 255px; */
       cursor: pointer; }
       .portafolio .card .img:hover {
         opacity: 0.8; }
@@ -525,6 +531,34 @@ body, html {
   .nav.stick {
     background-color: #222;
     padding: 2em 0; }
+  .nav .responsive {
+    display: none;
+    background-color: #222; }
+    .nav .responsive.active {
+      display: block; }
+      .nav .responsive.active ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center; }
+        .nav .responsive.active ul .nav-item {
+          display: block;
+          cursor: pointer;
+          padding: 1em 0; }
+          .nav .responsive.active ul .nav-item.active a {
+            color: #2f937b; }
+          .nav .responsive.active ul .nav-item a {
+            color: #cfcfcf;
+            text-decoration: none; }
+  .nav .menu-opener {
+    display: none;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: -20px;
+    font-size: 2.5em;
+    right: 0.5em; }
 
 .video-container {
   height: 100%;
@@ -541,3 +575,13 @@ body, html {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+@media only screen and (max-width: 960px) {
+  .nav .full {
+    display: none !important; }
+  .nav .menu-opener {
+    display: block !important; } }
+
+@media only screen and (max-width: 768px) {
+  .social {
+    display: none; } }
