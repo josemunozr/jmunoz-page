@@ -62,6 +62,62 @@ body,html {
   color: #cfcfcf;
 }
 
+.footer{
+  .social-footer {
+    height: 100px;
+    background-color: #222;
+    .social-button {
+      border-radius:50%;
+      border: 1px solid #cfcfcf;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      cursor: pointer;
+      display: inline-block;
+      margin: 2em 1em;
+      a{color: #cfcfcf; text-decoration: none;}
+      &:hover.twitter { 
+        background-color: #1da1f2;
+        border-color: #1da1f2;
+        color: #fff;
+      }
+      &:hover.facebook { 
+        background-color: #3b5998;
+        border-color: #3b5998;
+        color: #fff;
+      }
+      &:hover.git { 
+        background-color: #333333;
+        border-color: #333333;
+        color: #fff;
+      }
+    }
+  }
+  .tag{
+    background-color: #222;
+    color: #cfcfcf;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    padding-right: 1em;
+    span{
+      margin: 2em 0.2em;
+    }
+  }
+  .copyright {
+    padding: 0 2em;
+    background-color: #333;
+    .top {
+      text-align: right;
+      a{
+        text-decoration: none;
+        color: #cfcfcf;
+      }
+    }
+  }
+}
+
 .icon {
   position: absolute;
   bottom: 0;
@@ -261,9 +317,14 @@ body,html {
   }
 }
 
+
+
 @media only screen and (max-width: 768px) {
   .social {
     display: none;
+  }
+  .about {
+    font-size: 1.5em;
   }
 }
 

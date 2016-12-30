@@ -23,7 +23,7 @@
     var home_top = $("#home").offset().top;
     var portafolio_top = $("#portafolio").offset().top;
     var aboutme_top = $("#about-me").offset().top;
-    var contact_top = $("#contact").offset().top;
+    /*var contact_top = $("#contact").offset().top;*/
 
     if($(window).scrollTop() +70 < portafolio_top){
       $(".nav-item.home").addClass('active');
