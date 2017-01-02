@@ -478,6 +478,9 @@ body, html {
       text-decoration: none;
       color: #cfcfcf; }
 
+.home .title {
+  font-size: 2em; }
+
 .icon {
   position: absolute;
   bottom: 0;
@@ -497,7 +500,8 @@ body, html {
   padding: 100px 0;
   background-color: #f1f1f1; }
   .portafolio .title {
-    color: #333; }
+    color: #333;
+    font-size: 2em; }
   .portafolio .card {
     background-color: transparent;
     color: #333;
