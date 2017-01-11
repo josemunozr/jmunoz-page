@@ -15,7 +15,7 @@
       if(!$('.menu-opener').hasClass('fa-bars')){
         $('.menu-opener').toggleClass('fa-bars');
       }
-     
+
     }
   }
 
@@ -36,7 +36,7 @@
     }else {
       $(".nav-item.pf").removeClass('active');
     }
-    
+
     if($(window).scrollTop() +70 >= aboutme_top){
       $(".nav-item.pf").removeClass('active');
       $(".nav-item.aboutme").addClass('active');
@@ -72,7 +72,13 @@
     $(".responsive").toggleClass('active');
     $(".nav").addClass('stick');
     $('.menu-opener').toggleClass('fa-bars');
-   
+
   });
+
+  $(".card").on('click', function () {
+      $('.modal').modal('show');
+  });
+
+
 
 }());
